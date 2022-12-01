@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕컴퓨터학원</title>
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+   
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="로고이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li><a href="#">학원소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">학원소식</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">등록안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">커리큘럼</a></li>
+                            <li><a href="#">수강시간표</a></li>
+                            <li><a href="#">수강료조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">강사진소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">JAVA</a></li>
+                            <li><a href="#">PYTHON</a></li>
+                            <li><a href="#">C / C++</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">수강후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodywrap">
+        <div class="imgslide">
+        </div>
+        <div class="contents">
+            <ul class="tabmenu">
+                <li class="active"><a href="#">공지사항</a>
+                    <div class="notice"> 
+                        <ul>
+                            <li><a href="#">코로나19 방역지침 안내<span>2022.10.22</span></a></li>
+                            <li><a href="#">하계기간 야간 연장운영합니다.<span>2022.07.23</span></a></li>
+                            <li><a href="#">여름방학 안내<span>2022.06.24</span></a></li>
+                            <li><a href="#">박*형 수강생의 취업을 축하합니다.<span>2022.03.25</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <a href="#">갤러리</a>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="images/gallery1.jpg" alt="갤러리 이미지1"></a></li>
+                            <li><a href="#"><img src="images/JAVA.jpg" alt="자바 이미지"></a></li>
+                            <li><a href="#"><img src="images/PYTHON.png" alt="파이썬 이미지"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="otherwrap">
+                <div class="time">
+                    <a href="#">
+                        <img src="images/time.png" alt="시간표/수강료"><h4 class="bntext">시간표 / 수강료 조회</h4>
+                    </a>
+                </div>  
+                <div class="shortcut">
+                    <a href="#">
+                        <img src="images/Academy.png" alt="컴퓨터학원이란">
+                        <h4 class="sctext">컴퓨터학원이란?</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layer">
+        <div class="layer_up">
+            <div class="uptitle">코로나19 방역지침 안내</div>
+            <div class="upbody">
+            지속되는 코로나19로 인해 수강생분들은 흡연 / 식수 이외의 시간에는 항상 마스크를 착용해주시기 바랍니다.
+            코를 가리지 않거나, 턱에만 걸치는 비정상적인 마스크 착용이 보일 시 <br>최대 10만원의 과태료가 부과 될 수 있습니다.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="btlogo"><a href="#">
+            <img src="images/logo_bottom.png" alt="하단로고">
+        </a></div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">부산지점</a></li>
+                    <li><a href="#">천안지점</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="copy">서울특별시 구로구 경인로 557 신한은행 4층<p></p>하이미디어 컴퓨터학원<p>Tel : 010 - 6382 - 9062</p><p>E-mail : kin698@gmail.com</p></div>
+    </footer>
+
+
+    <script src="javascript/vegas.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(".imgslide").vegas({
+           slides: [
+           {   src: '/images/time.jpg',
+               video: {
+                   src: [
+                       '../videos/introduce.mp4',
+                   ],
+                   loop: true,
+                   mute: true
+               }
+           }
+         ]
+       });
+   });
+   </script>
+
+</body>
+</html>
